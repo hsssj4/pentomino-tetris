@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>펜토미노 테트리스</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<div id="start-screen">
+		<h1>펜토미노 테트리스</h1>
+		<button onclick="startGame()">게임 시작</button>
+		<div id="score"></div>
+		<div class="controls">
+			기존의 테트리스가 4개의 정사각형 타일을 붙여 
+			1개의 테트리스 피스를 만들지만
+			펜토미노 테트리스는 5개의 정사각형 타일을 붙여
+			1개의 테트리스 피스를 만듭니다.
+			그렇기 때문에 더 어렵고 다양한 테트리스 피스, 스킬들이 존재합니다
+			Enjoy The Game!
+
+			좌우 화살표 : 좌우 이동
+			아래 화살표 : 빠르게 내리기
+			Z : 반시계 방향 회전
+			C : 시계 방향 회전
+		</div>
+	</div>
+
+	<div id="score-display">점수: 0</div>
+
+	<div id="game-container">
+		<canvas id="game" width="240" height="480"></canvas>
+		<div class="preview-container">
+			<div>다음 피스</div>
+			<canvas id="next" width="120" height="120"></canvas>
+		</div>
+	</div>
+
+	<script src="js.js"></script>
+</body>
+
+</html>
